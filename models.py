@@ -5,7 +5,7 @@ from dataclasses import dataclass
 class Fieldnames:
     title: str
     modification_date: str
-    number: str
+    id: str
     text: str
     hyperlink: str
 
@@ -14,7 +14,7 @@ class Fieldnames:
         fieldnames = [
             self.title, 
             self.modification_date,
-            self.number,
+            self.id,
             self.text,
             self.hyperlink,
         ]
@@ -24,7 +24,7 @@ class Fieldnames:
 fieldnames = Fieldnames(
     title='short_description',
     modification_date='published',
-    number='number',
+    id='number',
     text='text',
     hyperlink='u_knowledge_permalink',
 )
