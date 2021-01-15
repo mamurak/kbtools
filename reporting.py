@@ -14,3 +14,9 @@ def write_report(duplicate_articles, report_file_name):
 
     print('Wrote report.')
     return
+
+
+def write_to_file(content, location):
+    print(f'Writing {len(content)} characters to {location}.')
+    with open(location, 'w') as outputfile:
+        outputfile.write(content)
